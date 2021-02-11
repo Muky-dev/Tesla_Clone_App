@@ -5,7 +5,7 @@ import styles from './styles';
 
 const CarItem = (props) => {
 
-    const { name, tagline, taglineCTA, image} = props;
+    const { name, tagline, taglineCTA, image} = props.car;
 
     return (
         <View style={styles.carContainer}>
@@ -33,7 +33,7 @@ const CarItem = (props) => {
                 type="primary" 
                 content={"Custom Order"} 
                 onPress={() => {
-                    console.warn("Custom was pressed");
+                    console.warn("Custom Order was pressed");
                 }} 
                 />
 
@@ -41,7 +41,7 @@ const CarItem = (props) => {
                 type="secondary" 
                 content={"Existing Inventory"} 
                 onPress={() => {
-                    console.warn("Existing was pressed");
+                    console.warn("Existing Inventory was pressed");
                 }} 
                 />
             </View>
